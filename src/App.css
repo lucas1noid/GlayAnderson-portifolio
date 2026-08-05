@@ -125,7 +125,7 @@ body {
   width: 100%;
 }
 
-/* BOTÃO ÚNICO DE DESTANQUE NO HEADER */
+/* BOTÃO ÚNICO DE DESTAQUE NO HEADER */
 .btn-orange-header {
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: #ffffff;
@@ -148,7 +148,7 @@ body {
   transform: translateY(1px) scale(0.97);
 }
 
-/* HERO SECTION */
+/* HERO SECTION - CONFIGURAÇÃO DESKTOP */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -156,9 +156,10 @@ body {
   padding-bottom: 80px;
   display: flex;
   align-items: center;
-  background-image: url('/images/glay-hero.png');
+  background-image: url('/images/Glay-hero.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
@@ -167,7 +168,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(11, 13, 15, 0.95) 0%, rgba(11, 13, 15, 0.85) 45%, rgba(11, 13, 15, 0.6) 100%);
+  background: linear-gradient(90deg, rgba(11, 13, 15, 0.95) 0%, rgba(11, 13, 15, 0.7) 45%, rgba(11, 13, 15, 0.1) 100%);
   z-index: 1;
 }
 
@@ -527,7 +528,7 @@ body {
   color: #ffffff;
 }
 
-/* WIDGET DO CARTÃO DE VISITAS FÍSICO (INSPIRADO NO DESIGN REAL DO CLIENTE) */
+/* WIDGET DO CARTÃO DE VISITAS FÍSICO (INSPIRADO DO DESIGN REAL DO CLIENTE) */
 .business-card-widget {
   background: #141a22;
   border: 1px solid #252e3c;
@@ -772,6 +773,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    background-image: url('/images/glay-heromobile.png');
+    background-position: center;
+
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(11, 13, 15, 0.95) 0%, rgba(11, 13, 15, 0.6) 70%, rgba(11, 13, 15, 0.0) 100%);
+  }
+
   .nav-links {
     display: none;
   }
