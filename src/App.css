@@ -125,6 +125,21 @@ body {
   width: 100%;
 }
 
+.btn-svg-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  /* Garante que caso o SVG use cor padrão, fique branco */
+  filter: brightness(0) invert(1); 
+}
+
+.contact-svg-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
 /* BOTÃO ÚNICO DE DESTAQUE NO HEADER */
 .btn-orange-header {
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
@@ -218,27 +233,28 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-orange {
+/* BOTÃO VERDE DO WHATSAPP */
+.btn-green {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
   color: #ffffff;
   padding: 14px 24px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.3);
   transition: all 0.25s ease;
 }
 
-.btn-orange:hover {
+.btn-green:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.5);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.5);
 }
 
-.btn-orange:active {
+.btn-green:active {
   transform: translateY(1px) scale(0.97);
 }
 
@@ -438,19 +454,22 @@ body {
   box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
 }
 
-/* BOOKING SECTION & BUSINESS CARD INTEGRADO */
+/* BOOKING / CONTATO SECTION (CENTRALIZADA) */
 .booking-section {
   background-color: #0b0d0f;
   padding: 100px 24px;
 }
 
-.booking-container {
-  max-width: 1200px;
+.booking-container-centered {
+  max-width: 800px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  text-align: center;
+}
+
+.booking-info-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .booking-title {
@@ -464,41 +483,45 @@ body {
 
 .booking-description {
   color: #94a3b8;
-  font-size: 14.5px;
-  margin-bottom: 28px;
+  font-size: 15px;
+  margin-bottom: 36px;
+  max-width: 500px;
 }
 
-.contact-cards {
+.contact-cards-centered {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .contact-card {
   background-color: #12171f;
   border: 1px solid #1e2633;
-  border-radius: 10px;
-  padding: 16px 20px;
+  border-radius: 12px;
+  padding: 18px 24px;
   display: flex;
   align-items: center;
   gap: 16px;
+  text-decoration: none;
+  min-width: 280px;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .contact-card:hover {
-  transform: translateX(6px);
+  transform: translateY(-4px);
   border-color: #f97316;
 }
 
 .contact-icon-box {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact-icon-box.green {
@@ -514,6 +537,7 @@ body {
 .contact-card-text {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .contact-label {
@@ -526,178 +550,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-}
-
-/* WIDGET DO CARTÃO DE VISITAS FÍSICO (INSPIRADO DO DESIGN REAL DO CLIENTE) */
-.business-card-widget {
-  background: #141a22;
-  border: 1px solid #252e3c;
-  border-radius: 14px;
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-.business-card-widget:hover {
-  transform: translateY(-3px);
-  border-color: #f97316;
-}
-
-.bc-main {
-  padding: 24px;
-  flex: 1;
-}
-
-.bc-header h4 {
-  font-size: 22px;
-  font-weight: 900;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-}
-
-.bc-header span {
-  font-size: 10px;
-  font-weight: 700;
-  color: #f97316;
-  letter-spacing: 1.5px;
-}
-
-.bc-body {
-  margin-top: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.bc-phone {
-  font-size: 15px;
-  font-weight: 700;
-  color: #e2e8f0;
-}
-
-.qr-code-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.qr-code-box img {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  background: white;
-  padding: 4px;
-}
-
-.qr-code-box span {
-  font-size: 9px;
-  color: #94a3b8;
-}
-
-/* FAIXA LATERAL LARANJA + XADREZ REPRODUZINDO O CARTÃO IMPRESSO */
-.bc-stripe {
-  width: 70px;
-  background: linear-gradient(180deg, #f97316 0%, #d97706 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 0 0 0;
-  position: relative;
-}
-
-.checkered-pattern-accent {
-  width: 100%;
-  height: 50px;
-  background-image: repeating-conic-gradient(#0b0d0f 0% 25%, transparent 0% 50%);
-  background-size: 14px 14px;
-  opacity: 0.85;
-}
-
-/* FORM CARD */
-.booking-form-card {
-  background-color: #11161d;
-  border: 1px solid #1c232e;
-  border-radius: 12px;
-  padding: 36px;
-}
-
-.booking-form-card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 24px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.booking-form-card label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #94a3b8;
-}
-
-.booking-form-card input,
-.booking-form-card textarea {
-  width: 100%;
-  background-color: #0b0e12;
-  border: 1px solid #1e2633;
-  border-radius: 6px;
-  padding: 12px 14px;
-  color: #ffffff;
-  font-size: 14px;
-  outline: none;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.booking-form-card input:focus,
-.booking-form-card textarea:focus {
-  border-color: #f97316;
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
-}
-
-.booking-form-card input::placeholder,
-.booking-form-card textarea::placeholder {
-  color: #475569;
-}
-
-.btn-submit-orange {
-  width: 100%;
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  color: #ffffff;
-  border: none;
-  padding: 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  margin-top: 8px;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
-}
-
-.btn-submit-orange:hover {
-  opacity: 0.95;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
-}
-
-.btn-submit-orange:active {
-  transform: translateY(1px) scale(0.98);
 }
 
 /* FOOTER */
@@ -775,8 +627,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     background-image: url('/images/glay-heromobile.png');
-    background-position: center;
-
+    background-position: 20% center;
   }
 
   .hero-overlay {
@@ -791,8 +642,7 @@ body {
     font-size: 36px;
   }
 
-  .about-container,
-  .booking-container {
+  .about-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -801,8 +651,14 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .form-row {
-    grid-template-columns: 1fr;
+  .contact-cards-centered {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 340px;
   }
 
   .footer-container {

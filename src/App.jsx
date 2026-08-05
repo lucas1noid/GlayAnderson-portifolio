@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 
 // Componente para o Logotipo estilizado enquanto estiver sem logotipo original (gerado com IA)
@@ -14,23 +14,6 @@ const LogoGA = () => (
 );
 
 export default function App() {
-  const [formData, setFormData] = useState({
-    nome: '',
-    telefone: '',
-    data: '',
-    detalhes: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Solicitação enviada com sucesso!');
-  };
-
   return (
     <div className="app-container">
       {/* NAVBAR */}
@@ -47,8 +30,11 @@ export default function App() {
           <nav className="nav-links">
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
+            {/* AINDA NAO IMPLEMENTADOS */}
             <a href="#diferenciais">#Diferenciais#</a>
             <a href="#depoimentos">#Depoimentos#</a>
+
+
           </nav>
 
           <div className="nav-actions">
@@ -77,9 +63,15 @@ export default function App() {
             pontualidade e discrição para executivos e clientes exigentes.
           </p>
           <div className="hero-buttons">
-            <a href="https://wa.me/5584998169229" target="_blank" rel="noopener noreferrer" className="btn-orange">
-              <span className="btn-icon">💬</span> Agende via WhatsApp
-            </a>
+              <a
+                href="https://wa.me/5584998169229"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-green"
+              >
+                <img src="/icons/zap.svg" alt="WhatsApp" className="btn-svg-icon" />
+                Agende via WhatsApp
+              </a>
             <a href="tel:+5584998169229" className="btn-outline">
               <span className="btn-icon">📞</span> Ligar Agora
             </a>
@@ -91,9 +83,9 @@ export default function App() {
       <section id="sobre" className="about-section">
         <div className="about-container">
           <div className="about-image-card">
-            <img 
-              src="/images/glay-sobre.png" 
-              alt="Glay Anderson - Motorista Executivo" 
+            <img
+              src="/images/glay-sobre.png"
+              alt="Glay Anderson - Motorista Executivo"
               className="about-image"
             />
           </div>
@@ -173,10 +165,10 @@ export default function App() {
         </div>
       </section>
 
-      {/* SEÇÃO CONTATO / COTAÇÃO + CARTÃO DIGITAL INTEGRADO */}
+      {/* SEÇÃO CONTATO CENTRALIZADA */}
       <section id="contato" className="booking-section">
-        <div className="booking-container">
-          <div className="booking-info">
+        <div className="booking-container-centered">
+          <div className="booking-info-centered">
             <span className="section-subtitle-orange uppercase">AGENDE SUA VIAGEM</span>
             <h2 className="booking-title">
               Pronto para uma experiência <br />
@@ -186,106 +178,17 @@ export default function App() {
               Entre em contato para orçamentos, disponibilidade e reservas. Respondemos prontamente.
             </p>
 
-            <div className="contact-cards">
-              <div className="contact-card">
-                <div className="contact-icon-box green">💬</div>
-                <div className="contact-card-text">
-                  <span className="contact-label">WhatsApp</span>
-                  <span className="contact-val">(84) 99816-9229</span>
-                </div>
-              </div>
-
-              <div className="contact-card">
-                <div className="contact-icon-box orange">✉️</div>
-                <div className="contact-card-text">
-                  <span className="contact-label">E-mail</span>
-                  <span className="contact-val">contato@glayanderson.com</span>
-                </div>
-              </div>
+            <div className="contact-cards-centered">
+              <a
+                href="https://wa.me/5584998169229"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-green"
+              >
+                <img src="/icons/zap.svg" alt="WhatsApp" className="btn-svg-icon" />
+                Agende via WhatsApp
+              </a>
             </div>
-
-            {/* REPRODUÇÃO DO CARTÃO FÍSICO DO CLIENTE NO SITE */}
-            <div className="business-card-widget">
-              <div className="bc-main">
-                <div className="bc-header">
-                  <h4>GLAY ANDERSON</h4>
-                  <span>MOTORISTA EXECUTIVO - TÁXI</span>
-                </div>
-                <div className="bc-body">
-                  <p className="bc-phone">📞 (84) 99816.9229</p>
-                  <div className="qr-code-box">
-                    {/* Placeholder visual do QR Code do cartão */}
-                    <img 
-                      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5584998169229" 
-                      alt="QR Code WhatsApp Glay Anderson" 
-                    />
-                    <span>Escaneie para chamar</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bc-stripe">
-                <LogoGA />
-                <div className="checkered-pattern-accent"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div id="agendar" className="booking-form-card">
-            <h3>Solicitar Cotação</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label>Nome Completo</label>
-                <input 
-                  type="text" 
-                  name="nome"
-                  placeholder="Seu nome" 
-                  value={formData.nome}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Telefone / WhatsApp</label>
-                  <input 
-                    type="text" 
-                    name="telefone"
-                    placeholder="(84) 99816-9229" 
-                    value={formData.telefone}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label>Data da Viagem</label>
-                  <input 
-                    type="text" 
-                    name="data"
-                    placeholder="dd/mm/aaaa" 
-                    value={formData.data}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label>Detalhes do Trajeto</label>
-                <textarea 
-                  name="detalhes"
-                  placeholder="Origem, destino, número de passageiros..." 
-                  rows="4"
-                  value={formData.detalhes}
-                  onChange={handleChange}
-                ></textarea>
-              </div>
-
-              <button type="submit" className="btn-submit-orange">
-                Enviar Solicitação
-              </button>
-            </form>
           </div>
         </div>
       </section>
