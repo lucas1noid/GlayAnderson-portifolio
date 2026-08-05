@@ -51,16 +51,16 @@ export default function App() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="badge-tag">
-            <span className="badge-icon">✓</span> MOTORISTA EXECUTIVO PREMIUM
+            <span className="badge-icon">✓</span> ATENDO TODA A GRANDE NATAL
           </div>
           <h1 className="hero-title">
-            Excelência em<br />
-            <span className="text-orange">Transporte</span><br />
-            <span className="text-orange">Executivo</span>
+             Um transporte de <br />
+            <span className="text-orange" >Excelência</span><br />
+            
           </h1>
           <p className="hero-description">
-            Glay Anderson oferece um serviço de transporte premium com foco absoluto em segurança,
-            pontualidade e discrição para executivos e clientes exigentes.
+            Olá! Me chamo <strong>Glay Anderson</strong> e ofereço um serviço de transporte premium com foco absoluto em segurança,
+            pontualidade e agilidade para clientes exigentes e/ou executivos.
           </p>
           <div className="hero-buttons">
               <a
@@ -93,20 +93,20 @@ export default function App() {
           <div className="about-content">
             <h2>Experiência e <span className="text-orange">Confiança</span></h2>
             <p>
-              Com anos de experiência no mercado de transporte executivo, Glay Anderson construiu uma reputação baseada em três pilares fundamentais: <strong>Segurança, Pontualidade e Conforto.</strong>
+              Credenciado como taxista pelo município de São Gonçalo do Amarante - RN, com mais de 15 anos de experiência no mercado como taxista e motorista executivo, construí uma reputação baseada em três pilares fundamentais: <strong>Segurança, Pontualidade e Conforto.</strong>
             </p>
             <p>
-              Cada viagem é planejada meticulosamente para garantir que você chegue ao seu destino sem preocupações. Nosso compromisso é proporcionar uma experiência tranquila, permitindo que você relaxe ou continue seu trabalho com total privacidade.
+              Cada viagem é planejada para garantir que você chegue ao seu destino sem preocupações e da melhor forma possível. Meu compromisso é proporcionar uma experiência tranquila, permitindo que você relaxe ou continue seu trabalho durante a viagem..
             </p>
 
             <ul className="about-list">
               <li>
                 <span className="check-icon">✓</span>
-                <span><strong>Profissionalismo e Discrição</strong></span>
+                <span><strong>Profissionalismo e seriedade</strong></span>
               </li>
               <li>
                 <span className="check-icon">✓</span>
-                <span><strong>Conhecimento profundo das rotas</strong></span>
+                <span><strong>Conhecimento profundo das rotas de toda a grande Natal</strong></span>
               </li>
               <li>
                 <span className="check-icon">✓</span>
@@ -120,19 +120,19 @@ export default function App() {
       {/* SEÇÃO SERVIÇOS ESPECIALIZADOS */}
       <section id="servicos" className="services-section">
         <div className="section-header-center">
-          <span className="section-subtitle-orange">NOSSAS SOLUÇÕES</span>
+          <span className="section-subtitle-black">COMO POSSO TE AJUDAR?</span>
           <h2 className="section-title-dark">
-            <span className="text-gray">Serviços</span> <span className="text-orange-heading">Especializados</span>
+            <span className="text-orange-heading">Serviços Prestados</span>
           </h2>
         </div>
 
         <div className="services-grid">
           {/* Card 1 */}
           <div className="service-card">
-            <div className="service-icon-box">🚗</div>
-            <h3>Transporte Executivo</h3>
+            <div className="service-icon-box">🚕</div>
+            <h3>TAXI de Qualidade</h3>
             <p>
-              Deslocamento corporativo diário com total conforto e privacidade para reuniões e compromissos.
+              Deslocamento diário com total conforto e privacidade para reuniões,compromissos e eventos.
             </p>
           </div>
 
@@ -141,25 +141,25 @@ export default function App() {
             <div className="service-icon-box">🗺️</div>
             <h3>Viagens Intermunicipais</h3>
             <p>
-              Viagens seguras e tranquilas entre cidades, ideais para negócios ou lazer prolongado.
+              Viagens seguras e tranquilas entre cidades, lazer prolongado e experiências memoráveis.
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="service-card">
-            <div className="service-icon-box">🛫</div>
-            <h3>Traslados Aeroporto</h3>
+            <div className="service-icon-box">🤵‍♂️</div>
+            <h3>Motorista Particular</h3>
             <p>
-              Recepção no aeroporto com monitoramento de voos para garantir pontualidade no embarque e desembarque.
+              Contrate também pelo período desejado o serviço de motorista particular e desfrute de toda experiência e segurança.
             </p>
           </div>
 
           {/* Card 4 */}
           <div className="service-card">
-            <div className="service-icon-box">🏢</div>
-            <h3>Eventos e Empresas</h3>
+            <div className="service-icon-box">🛫</div>
+            <h3>Traslados Aeroporto</h3>
             <p>
-              Soluções logísticas para eventos corporativos, congressos e transporte de delegações empresariais.
+              Recepção no aeroporto, garantindo pontualidade máxima no seu embarque e desembarque.
             </p>
           </div>
         </div>
@@ -169,13 +169,13 @@ export default function App() {
       <section id="contato" className="booking-section">
         <div className="booking-container-centered">
           <div className="booking-info-centered">
-            <span className="section-subtitle-orange uppercase">AGENDE SUA VIAGEM</span>
+            <span className="section-subtitle-orange uppercase">AGENDE JÁ A SUA VIAGEM</span>
             <h2 className="booking-title">
               Pronto para uma experiência <br />
               <span className="text-orange">Premium?</span>
             </h2>
             <p className="booking-description">
-              Entre em contato para orçamentos, disponibilidade e reservas. Respondemos prontamente.
+              Entre em contato para orçamentos, disponibilidade e reservas. Estarei de prontidão para lhe atender.
             </p>
 
             <div className="contact-cards-centered">
@@ -205,7 +205,7 @@ export default function App() {
               </div>
             </div>
             <p className="footer-description">
-              Excelência em transporte executivo. Segurança, pontualidade e luxo para suas viagens corporativas e pessoais.
+              Excelência em transporte executivo. Segurança, pontualidade e qualidade para suas viagens.
             </p>
           </div>
 
@@ -217,19 +217,10 @@ export default function App() {
               <li><a href="#contato">Contato</a></li>
             </ul>
           </div>
-
-          <div className="footer-col">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms of Service</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© 2024 Glay Anderson Executive Chauffeur. All rights reserved. Precision. Reliability. Luxury.</p>
+          <p>© 2026 Glay Anderson. All rights reserved. Precision. Reliability. Luxury.</p>
           <p className="developer-credit">Developed by Lucas Lopes</p>
         </div>
       </footer>
