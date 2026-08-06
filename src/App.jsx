@@ -1,16 +1,12 @@
 import React from 'react';
 import './App.css';
 
-// Componente para o Logotipo estilizado enquanto estiver sem logotipo original (gerado com IA)
 const LogoGA = () => (
-  <svg width="42" height="42" viewBox="0 0 100 100" className="ga-logo-svg">
-    {/* Anel Externo Quadriculado (Padrão Xadrez/Táxi Executivo) */}
-    <circle cx="50" cy="50" r="45" fill="none" stroke="#f97316" strokeWidth="6" strokeDasharray="7 5" />
-    {/* Anel Interno Dourado */}
-    <circle cx="50" cy="50" r="37" fill="#0b0d0f" stroke="#eab308" strokeWidth="3" />
-    {/* Sigla GA */}
-    <text x="50" y="62" textAnchor="middle" fill="#ffffff" fontSize="38" fontWeight="900" fontFamily="Inter, sans-serif">GA</text>
-  </svg>
+  <img
+    src="/images/logotipo.png"
+    alt="Logo Glay Anderson"
+    className="brand-logo-img"
+  />
 );
 
 export default function App() {
@@ -54,24 +50,24 @@ export default function App() {
             <span className="badge-icon">✓</span> ATENDO TODA A GRANDE NATAL
           </div>
           <h1 className="hero-title">
-             Um transporte de <br />
+            Um transporte de <br />
             <span className="text-orange" >Excelência</span><br />
-            
+
           </h1>
           <p className="hero-description">
             Olá! Me chamo <strong>Glay Anderson</strong> e ofereço um serviço de transporte premium com foco absoluto em segurança,
             pontualidade e agilidade para clientes exigentes e/ou executivos.
           </p>
           <div className="hero-buttons">
-              <a
-                href="https://wa.me/5584998169229"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-green"
-              >
-                <img src="/icons/zap.svg" alt="WhatsApp" className="btn-svg-icon" />
-                Agende via WhatsApp
-              </a>
+            <a
+              href="https://wa.me/5584998169229"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-green"
+            >
+              <img src="/icons/zap.svg" alt="WhatsApp" className="btn-svg-icon" />
+              WhatsApp
+            </a>
             <a href="tel:+5584998169229" className="btn-outline">
               <span className="btn-icon">📞</span> Ligar Agora
             </a>
@@ -200,8 +196,8 @@ export default function App() {
             <div className="logo-container">
               <LogoGA />
               <div className="logo-text-box">
-                <span className="logo-text">Glay Anderson</span>
-                <span className="logo-subtext">Motorista Executivo</span>
+                <span className="logo-text">GLAY ANDERSON</span>
+                <span className="logo-subtext">MOTORISTA EXECUTIVO · TAXI</span>
               </div>
             </div>
             <p className="footer-description">
@@ -220,8 +216,18 @@ export default function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Glay Anderson. All rights reserved. Precision. Reliability. Luxury.</p>
-          <p className="developer-credit">Developed by Lucas Lopes</p>
+          <p>© 2026 Glay Anderson Motorista Executivo · Taxi . All rights reserved.</p>
+          <p className="developer-credit-wrapper">
+            Developed by{' '}
+            <a
+              className="developer-credit"
+              href="https://lucas-lopes.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lucas "noid" Lopes
+            </a>
+          </p>
         </div>
       </footer>
     </div>

@@ -17,13 +17,22 @@ body {
   overflow-x: hidden;
 }
 
-/* HELPER CLASSES */
+/* LOGO OFICIAL COM CORTE CIRCULAR */
+.brand-logo-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* HELPER CLASSES - PALETA DO LOGO (#f7cc04 & #feb108) */
 .text-orange {
-  color: #f97316;
+  color: #f7cc04;
 }
 
 .text-orange-heading {
-  color: #ea580c;
+  color: #feb108;
 }
 
 .text-gray {
@@ -86,7 +95,7 @@ body {
 
 .logo-subtext {
   font-size: 10px;
-  color: #f97316;
+  color: #f7cc04;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -117,7 +126,7 @@ body {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #f97316;
+  background-color: #f7cc04;
   transition: width 0.25s ease;
 }
 
@@ -130,7 +139,6 @@ body {
   height: 20px;
   display: inline-block;
   vertical-align: middle;
-  /* Garante que caso o SVG use cor padrão, fique branco */
   filter: brightness(0) invert(1); 
 }
 
@@ -142,20 +150,20 @@ body {
 
 /* BOTÃO ÚNICO DE DESTAQUE NO HEADER */
 .btn-orange-header {
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #f7cc04 0%, #feb108 100%);
+  color: #0b0d0f;
   padding: 10px 22px;
   border-radius: 8px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35);
+  box-shadow: 0 4px 14px rgba(247, 204, 4, 0.35);
   transition: all 0.25s ease;
 }
 
 .btn-orange-header:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.5);
+  box-shadow: 0 6px 20px rgba(254, 177, 8, 0.5);
   opacity: 0.95;
 }
 
@@ -163,7 +171,7 @@ body {
   transform: translateY(1px) scale(0.97);
 }
 
-/* HERO SECTION - CONFIGURAÇÃO DESKTOP */
+/* HERO SECTION */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -173,7 +181,7 @@ body {
   align-items: center;
   background-image: url('/images/Glay-hero.png');
   background-size: cover;
-  background-position: center;
+  background-position: bottom 10% center;
   background-repeat: no-repeat;
 }
 
@@ -183,7 +191,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(11, 13, 15, 0.95) 0%, rgba(11, 13, 15, 0.7) 45%, rgba(11, 13, 15, 0.1) 100%);
+  background: linear-gradient(90deg, rgba(11, 13, 15, 0.95) 0%, rgba(11, 13, 15, 0.7) 35%, rgba(11, 13, 15, 0.1) 100%);
   z-index: 1;
 }
 
@@ -201,13 +209,13 @@ body {
   align-items: center;
   gap: 6px;
   background-color: rgba(20, 24, 30, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(247, 204, 4, 0.25);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #f97316;
+  color: #f7cc04;
   margin-bottom: 24px;
 }
 
@@ -262,8 +270,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #d97706;
-  color: #f59e0b;
+  border: 1px solid #feb108;
+  color: #f7cc04;
   padding: 14px 24px;
   border-radius: 8px;
   font-size: 14px;
@@ -273,9 +281,9 @@ body {
 }
 
 .btn-outline:hover {
-  background-color: rgba(217, 119, 6, 0.15);
+  background-color: rgba(254, 177, 8, 0.15);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.25);
+  box-shadow: 0 6px 18px rgba(254, 177, 8, 0.25);
 }
 
 .btn-outline:active {
@@ -356,8 +364,8 @@ body {
 .check-icon {
   width: 22px;
   height: 22px;
-  background-color: #f97316;
-  color: #ffffff;
+  background-color: #f7cc04;
+  color: #0b0d0f;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -366,7 +374,7 @@ body {
   font-weight: bold;
 }
 
-/* SERVIÇOS ESPECIALIZADOS SECTION - CARDS UNIFORMES COM HOVER LARANJA */
+/* SERVIÇOS ESPECIALIZADOS SECTION */
 .services-section {
   background-color: #ffffff;
   padding: 100px 24px;
@@ -399,7 +407,6 @@ body {
   gap: 20px;
 }
 
-/* Todos os cards idênticos por padrão */
 .service-card {
   background-color: #9aa1a9;
   border-radius: 16px;
@@ -440,21 +447,21 @@ body {
   line-height: 1.5;
 }
 
-/* CARDS FICAM LARANJAS / DESTACADOS APENAS NO HOVER */
 .service-card:hover {
   background-color: #1a202c;
-  border-color: #f97316;
+  border-color: #f7cc04;
   transform: translateY(-8px);
-  box-shadow: 0 16px 32px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 16px 32px rgba(247, 204, 4, 0.25);
 }
 
 .service-card:hover .service-icon-box {
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #f7cc04 0%, #feb108 100%);
+  color: #0b0d0f;
   transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+  box-shadow: 0 4px 12px rgba(247, 204, 4, 0.4);
 }
 
-/* BOOKING / CONTATO SECTION (CENTRALIZADA) */
+/* BOOKING / CONTATO SECTION */
 .booking-section {
   background-color: #0b0d0f;
   padding: 100px 24px;
@@ -511,7 +518,7 @@ body {
 
 .contact-card:hover {
   transform: translateY(-4px);
-  border-color: #f97316;
+  border-color: #f7cc04;
 }
 
 .contact-icon-box {
@@ -530,8 +537,8 @@ body {
 }
 
 .contact-icon-box.orange {
-  background-color: rgba(249, 115, 22, 0.15);
-  color: #f97316;
+  background-color: rgba(247, 204, 4, 0.15);
+  color: #f7cc04;
 }
 
 .contact-card-text {
@@ -598,7 +605,7 @@ body {
 }
 
 .footer-col a:hover {
-  color: #f97316;
+  color: #f7cc04;
 }
 
 .footer-bottom {
@@ -613,11 +620,24 @@ body {
   color: #475569;
 }
 
-.developer-credit {
+.developer-credit-wrapper {
   color: #64748b;
+  font-size: 11px;
 }
 
-/* RESPONSIVIDADE (MOBILE & TABLET) */
+.developer-credit {
+  color: #94a3b8;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.developer-credit:hover {
+  color: #f7cc04;
+  text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -627,7 +647,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     background-image: url('/images/glay-heromobile.png');
-    background-position: 20% center;
+    background-position: center;
   }
 
   .hero-overlay {
