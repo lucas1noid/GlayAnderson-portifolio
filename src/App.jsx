@@ -12,6 +12,7 @@ const LogoGA = () => (
 export default function App() {
   return (
     <div className="app-container">
+      
       {/* NAVBAR */}
       <header className="navbar">
         <div className="navbar-container">
@@ -23,22 +24,22 @@ export default function App() {
             </div>
           </a>
 
-          <nav className="nav-links">
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            {/* AINDA NAO IMPLEMENTADOS */}
-            <a href="#diferenciais">#Diferenciais#</a>
-            <a href="#depoimentos">#Depoimentos#</a>
+            <nav className="nav-links">
+              <a href="#sobre">Sobre</a>
+              <a href="#servicos">Serviços</a>
+              {/* AINDA NAO IMPLEMENTADOS 
+              <a href="#diferenciais">#Diferenciais#</a>
+              <a href="#depoimentos">#Depoimentos#</a>
+              */}
 
+            </nav>
 
-          </nav>
-
-          <div className="nav-actions">
-            {/* Botão contato */}
-            <a href="#contato" className="btn-orange-header">
-              Contato
-            </a>
-          </div>
+            <div className="nav-actions">
+              {/* Botão contato */}
+              <a href="#contato" className="btn-orange-header">
+                Contato
+              </a>
+            </div>
         </div>
       </header>
 
@@ -60,7 +61,7 @@ export default function App() {
           </p>
           <div className="hero-buttons">
             <a
-              href="https://wa.me/5584998169229"
+              href="https://wa.me/5584998169229?text=Ol%C3%A1%2C%20Anderson!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%2F%20agendar%20uma%20viagem%20com%20voc%C3%AA."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-green"
@@ -92,7 +93,7 @@ export default function App() {
               Credenciado como taxista pelo município de São Gonçalo do Amarante - RN, com mais de 15 anos de experiência no mercado como taxista e motorista executivo, construí uma reputação baseada em três pilares fundamentais: <strong>Segurança, Pontualidade e Conforto.</strong>
             </p>
             <p>
-              Cada viagem é planejada para garantir que você chegue ao seu destino sem preocupações e da melhor forma possível. Meu compromisso é proporcionar uma experiência tranquila, permitindo que você relaxe ou continue seu trabalho durante a viagem..
+              Cada viagem é planejada para garantir que você chegue ao seu destino sem preocupações e da melhor forma possível. Meu compromisso é proporcionar uma experiência tranquila, permitindo que você relaxe ou continue seu trabalho durante a viagem.
             </p>
 
             <ul className="about-list">
@@ -128,7 +129,7 @@ export default function App() {
             <div className="service-icon-box">🚕</div>
             <h3>TAXI de Qualidade</h3>
             <p>
-              Deslocamento diário com total conforto e privacidade para reuniões,compromissos e eventos.
+              Deslocamentos diários com conforto, segurança e privacidade para reuniões, compromissos e eventos.
             </p>
           </div>
 
@@ -137,7 +138,7 @@ export default function App() {
             <div className="service-icon-box">🗺️</div>
             <h3>Viagens Intermunicipais</h3>
             <p>
-              Viagens seguras e tranquilas entre cidades, lazer prolongado e experiências memoráveis.
+                Viaje com tranquilidade entre cidades, aproveitando um serviço executivo que une conforto, segurança e excelência.
             </p>
           </div>
 
@@ -146,16 +147,16 @@ export default function App() {
             <div className="service-icon-box">🤵‍♂️</div>
             <h3>Motorista Particular</h3>
             <p>
-              Contrate também pelo período desejado o serviço de motorista particular e desfrute de toda experiência e segurança.
+              Motorista particular à sua disposição pelo tempo que precisar, garantindo conforto, segurança e uma experiência de alto padrão.
             </p>
           </div>
 
           {/* Card 4 */}
           <div className="service-card">
             <div className="service-icon-box">🛫</div>
-            <h3>Traslados Aeroporto</h3>
+            <h3>Traslado Aeroporto</h3>
             <p>
-              Recepção no aeroporto, garantindo pontualidade máxima no seu embarque e desembarque.
+              Recepção e traslado para o aeroporto, com pontualidade e tranquilidade em cada embarque e desembarque.
             </p>
           </div>
         </div>
@@ -176,7 +177,7 @@ export default function App() {
 
             <div className="contact-cards-centered">
               <a
-                href="https://wa.me/5584998169229"
+                href="https://wa.me/5584998169229?text=Ol%C3%A1%2C%20Anderson!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%2F%20agendar%20uma%20viagem%20com%20voc%C3%AA."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-green"
@@ -219,10 +220,10 @@ export default function App() {
           <p>© 2026 Glay Anderson. Todos os direitos reservados.</p>
           <p className="developer-credit-wrapper">
             Developed by{' '}
-            <a 
-              className="developer-credit" 
-              href="https://lucas-lopes.netlify.app" 
-              target="_blank" 
+            <a
+              className="developer-credit"
+              href="https://lucas-lopes.netlify.app"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Lucas "noid" Lopes

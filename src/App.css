@@ -339,6 +339,7 @@ body {
   font-size: 14.5px;
   line-height: 1.7;
   margin-bottom: 16px;
+  text-align: justify;
 }
 
 .about-content strong {
@@ -417,6 +418,7 @@ body {
   border: 2px solid transparent;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  text-align: center;
 }
 
 .service-icon-box {
@@ -650,7 +652,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 @media (max-width: 768px) {
   .hero-section {
