@@ -1,4 +1,4 @@
-/* RESET & SMOOTH SCROLL */
+/* RESET E SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
 }
@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/* LOGO OFICIAL COM CORTE CIRCULAR */
+/* LOGO */
 .brand-logo-img {
   width: 46px;
   height: 46px;
@@ -148,7 +148,7 @@ body {
   display: block;
 }
 
-/* BOTÃO ÚNICO DE DESTAQUE NO HEADER */
+/* BOTÃO ctt*/
 .btn-orange-header {
   background: linear-gradient(135deg, #f7cc04 0%, #feb108 100%);
   color: #0b0d0f;
@@ -570,7 +570,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -581,6 +581,13 @@ body {
   line-height: 1.6;
   margin-top: 16px;
   max-width: 320px;
+}
+
+.footer-col-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .footer-col h4 {
@@ -644,6 +651,7 @@ body {
   }
 }
 
+
 @media (max-width: 768px) {
   .hero-section {
     background-image: url('/images/glay-heromobile.png');
@@ -685,10 +693,15 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-
-  .footer-bottom {
+  
+    .footer-bottom {
     flex-direction: column;
     gap: 12px;
     text-align: center;
+  }
+
+  .footer-col-links {
+    align-items: flex-start;
+    text-align: left;
   }
 }

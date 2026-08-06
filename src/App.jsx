@@ -193,19 +193,19 @@ export default function App() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-col-main">
-            <div className="logo-container">
+            <a href="#" className="logo-container">
               <LogoGA />
               <div className="logo-text-box">
-                <span className="logo-text">GLAY ANDERSON</span>
-                <span className="logo-subtext">MOTORISTA EXECUTIVO · TAXI</span>
+                <span className="logo-text">Glay Anderson</span>
+                <span className="logo-subtext">Motorista Executivo</span>
               </div>
-            </div>
+            </a>
             <p className="footer-description">
               Excelência em transporte executivo. Segurança, pontualidade e qualidade para suas viagens.
             </p>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col footer-col-links">
             <h4>Links Rápidos</h4>
             <ul>
               <li><a href="#sobre">Sobre</a></li>
@@ -216,13 +216,13 @@ export default function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Glay Anderson Motorista Executivo · Taxi . All rights reserved.</p>
+          <p>© 2026 Glay Anderson. Todos os direitos reservados.</p>
           <p className="developer-credit-wrapper">
             Developed by{' '}
-            <a
-              className="developer-credit"
-              href="https://lucas-lopes.netlify.app"
-              target="_blank"
+            <a 
+              className="developer-credit" 
+              href="https://lucas-lopes.netlify.app" 
+              target="_blank" 
               rel="noopener noreferrer"
             >
               Lucas "noid" Lopes
