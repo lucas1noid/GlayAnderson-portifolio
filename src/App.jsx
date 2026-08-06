@@ -20,7 +20,7 @@ export default function App() {
             <LogoGA />
             <div className="logo-text-box">
               <span className="logo-text">GLAY ANDERSON</span>
-              <span className="logo-subtext">MOTORISTA EXECUTIVO · TAXI </span>
+              <span className="logo-subtext">MOTORISTA EXECUTIVO · TÁXI </span>
             </div>
           </a>
 
@@ -88,7 +88,7 @@ export default function App() {
           <div className="about-content">
             <h2>Experiência e <span className="text-orange">Confiança</span></h2>
             <p>
-              Credenciado como taxista pelo município de São Gonçalo do Amarante - RN, com mais de 15 anos de experiência no mercado como taxista e motorista executivo, construí uma reputação baseada em três pilares fundamentais: <strong>Segurança, Pontualidade e Conforto.</strong>
+              Credenciado como táxi pelo município de São Gonçalo do Amarante - RN, com mais de 15 anos de experiência no mercado como taxista e motorista executivo, construí uma reputação baseada em três pilares fundamentais: <strong>Segurança, Pontualidade e Conforto.</strong>
             </p>
             <p>
               Cada viagem é planejada para garantir que você chegue ao seu destino sem preocupações e da melhor forma possível. Meu compromisso é proporcionar uma experiência tranquila, permitindo que você relaxe ou continue seu trabalho durante a viagem.
@@ -125,7 +125,7 @@ export default function App() {
           {/* Card 1 */}
           <div className="service-card">
             <div className="service-icon-box">🚕</div>
-            <h3>TAXI de Qualidade</h3>
+            <h3>TÁXI de Qualidade</h3>
             <p>
               Deslocamentos diários com conforto, segurança e privacidade para reuniões, compromissos e eventos.
             </p>
