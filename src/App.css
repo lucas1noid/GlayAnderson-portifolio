@@ -104,6 +104,8 @@ body {
 .nav-links {
   display: flex;
   gap: 28px;
+  margin-left: auto; /* Empurra os links para junto do botão de contato */
+  margin-right: 32px;
 }
 
 .nav-links a {
@@ -132,6 +134,12 @@ body {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* Espaçamento entre o bloco de links e o botão */
 }
 
 .btn-svg-icon {

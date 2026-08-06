@@ -12,7 +12,7 @@ const LogoGA = () => (
 export default function App() {
   return (
     <div className="app-container">
-      
+
       {/* NAVBAR */}
       <header className="navbar">
         <div className="navbar-container">
@@ -24,14 +24,11 @@ export default function App() {
             </div>
           </a>
 
+          {/* Novo contêiner para agrupar o nav e o botão do lado direito */}
+          <div className="nav-right-group">
             <nav className="nav-links">
               <a href="#sobre">Sobre</a>
               <a href="#servicos">Serviços</a>
-              {/* AINDA NAO IMPLEMENTADOS 
-              <a href="#diferenciais">#Diferenciais#</a>
-              <a href="#depoimentos">#Depoimentos#</a>
-              */}
-
             </nav>
 
             <div className="nav-actions">
@@ -40,6 +37,7 @@ export default function App() {
                 Contato
               </a>
             </div>
+          </div>
         </div>
       </header>
 
@@ -138,7 +136,7 @@ export default function App() {
             <div className="service-icon-box">🗺️</div>
             <h3>Viagens Intermunicipais</h3>
             <p>
-                Viaje com tranquilidade entre cidades, aproveitando um serviço executivo que une conforto, segurança e excelência.
+              Viaje com tranquilidade entre cidades, aproveitando um serviço executivo que une conforto, segurança e excelência.
             </p>
           </div>
 
