@@ -4,7 +4,7 @@
 
 <img src="public/images/GA.png" alt="noid logo" width="150" align="center"/>
   <p>
-    <a href="https://lucas-lopes.netlify.app/">
+    <a href="https://glay.netlify.app/">
       <img src="https://img.shields.io/badge/Live_-glay.netlify.app-e11d48?style=for-the-badge" alt="Website" />
     </a>
   </p>
