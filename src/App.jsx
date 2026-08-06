@@ -3,7 +3,7 @@ import './App.css';
 
 const LogoGA = () => (
   <img
-    src="/images/logotipo.png"
+    src="/images/GA.png"
     alt="Logo Glay Anderson"
     className="brand-logo-img"
   />
@@ -20,7 +20,7 @@ export default function App() {
             <LogoGA />
             <div className="logo-text-box">
               <span className="logo-text">GLAY ANDERSON</span>
-              <span className="logo-subtext">MOTORISTA EXECUTIVO · TÁXI </span>
+              <span className="logo-subtext">Táxi · Motorista Executivo</span>
             </div>
           </a>
 
@@ -202,11 +202,11 @@ export default function App() {
               <LogoGA />
               <div className="logo-text-box">
                 <span className="logo-text">Glay Anderson</span>
-                <span className="logo-subtext">Motorista Executivo</span>
+                <span className="logo-subtext">Táxi · Motorista Executivo</span>
               </div>
             </a>
             <p className="footer-description">
-              Excelência em transporte executivo. Segurança, pontualidade e qualidade para suas viagens.
+              Excelência em transporte de pessoas. Segurança, pontualidade e qualidade para suas viagens.
             </p>
           </div>
 
