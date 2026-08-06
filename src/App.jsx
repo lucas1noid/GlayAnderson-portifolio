@@ -125,7 +125,7 @@ export default function App() {
           {/* Card 1 */}
           <div className="service-card">
             <div className="service-icon-box">🚕</div>
-            <h3>TÁXI de Qualidade</h3>
+            <h3>Táxi de Qualidade</h3>
             <p>
               Deslocamentos diários com conforto, segurança e privacidade para reuniões, compromissos e eventos.
             </p>
@@ -134,7 +134,7 @@ export default function App() {
           {/* Card 2 */}
           <div className="service-card">
             <div className="service-icon-box">🗺️</div>
-            <h3>Viagens Intermunicipais</h3>
+            <h3>Viagens Intermunicipais e interestaduais</h3>
             <p>
               Viaje com tranquilidade entre cidades, aproveitando um serviço executivo que une conforto, segurança e excelência.
             </p>
