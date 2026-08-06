@@ -160,7 +160,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* SEÇÃO CONTATO CENTRALIZADA */}
+      {/*CONTATO*/}
       <section id="contato" className="booking-section">
         <div className="booking-container-centered">
           <div className="booking-info-centered">
@@ -183,6 +183,12 @@ export default function App() {
                 <img src="/icons/zap.svg" alt="WhatsApp" className="btn-svg-icon" />
                 Agende via WhatsApp
               </a>
+            </div>
+
+            {/* Informações adicionais de contato em formato menor */}
+            <div className="contact-direct-info">
+              <p>📞 <a href="tel:+5584998169229">(84) 99816-9229</a></p>
+              <p>📩 <a href="https://mail.google.com/mail/u/0/?fs=1&to=glayandersonlopes@gmail.com&tf=cm" target="_blank" rel="noreferrer">glayandersonlopes@gmail.com</a></p>
             </div>
           </div>
         </div>
